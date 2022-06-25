@@ -1,0 +1,85 @@
+*{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px;
+    box-shadow: 0 0 15px 0 black;
+    width: 880px;
+    border-radius: 30px;
+    margin-left: 25%;
+
+}
+.content-secundario{
+    display: flex;
+    flex-direction: column; 
+    background-color:rgb(19, 18, 18);
+    width: 380px;
+    height: 430px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    align-items: center;;
+}
+.content-terciario{
+    background-color: gray;
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    height: 430px;
+    align-items: center;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+input{
+    height: 40px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+select{
+    margin-bottom: 30px;
+}
+.snail{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    margin-top: 30px;
+}          
+img{
+    height: 70%;
+    width: 70%;
+    margin-top: 12%;
+
+}  
+.titulo{
+    margin-bottom: 10px;
+}       
+p{
+    margin-bottom: 1px;
+}
+.datos{
+    border: 0px;
+    border-bottom: 2px black solid;
+    background-color: gray;
+    margin-bottom: 40px;
+}
+::placeholder { color:black;}
+.rol{
+    height: 30px;
+    width: 130px;
+    border-radius: 8px;
+    margin-right: 140px;
+}
+.ingreso{
+    border-radius: 20px;
+    border: 0;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    width: 130px;
+    margin-top: 30px;
+
+}
