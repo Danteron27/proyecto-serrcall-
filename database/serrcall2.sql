@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-03-2020 a las 00:09:19
--- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.3.0
+-- Tiempo de generación: 26-06-2022 a las 01:13:41
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,10 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `php_multilogin`
+-- Base de datos: `serrcall2`
 --
-CREATE DATABASE IF NOT EXISTS `php_multilogin` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `php_multilogin`;
 
 -- --------------------------------------------------------
 
@@ -43,8 +40,8 @@ CREATE TABLE `mainlogin` (
 --
 
 INSERT INTO `mainlogin` (`id`, `username`, `email`, `password`, `role`) VALUES
-(11, 'admin', 'demo@baulphp.com', '123456', 'admin'),
-(12, 'test', 'test@baulphp.com', '123456', 'personal');
+(11, 'admin', 'ccporras@hotmail.com', '1234', 'admin'),
+(12, 'test', 'jaortiz405@misena.edu.co', 'asdfg', 'usuarios');
 
 --
 -- Índices para tablas volcadas
