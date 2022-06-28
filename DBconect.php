@@ -1,8 +1,8 @@
 <?php
-$db_host="sql111.epizy.com"; //localhost server 
-$db_user="epiz_32038291";	//database username
-$db_password="sfEVceQvoX";	//database password   
-$db_name="epiz_32038291_serrcall2";	//database name
+$db_host="localhost"; //localhost server 
+$db_user="root";	//database username
+$db_password="";	//database password   
+$db_name="serrcall2";	//database name
 
 try
 {
@@ -15,6 +15,3 @@ catch(PDOEXCEPTION $e)
 }
 
 ?>
-
-
-

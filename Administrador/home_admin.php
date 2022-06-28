@@ -1,30 +1,3 @@
-<!--
-
-
-<?php
-
-
-/*
-// admin_home.php
-session_start();
-if (!array_key_exists('user_id', $_SESSION)) {
-   header('Location: login.html');
-   die;
-}
-$allowedRoles = ['admin'];
-if (!array_key_exists('role', $_SESSION) || !in_array($_SESSION['role'], $allowdRoles)) {
-   header('Location: login.html');
-   die;
-}
-*/
-
-
-
-?>
-
-
-<h1>Bienvenido amind!</h1>
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,13 +5,17 @@ if (!array_key_exists('role', $_SESSION) || !in_array($_SESSION['role'], $allowd
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=|, initial-scale=1.0">
     <title>Principal</title>
+    <link rel="stylesheet" href="css/loader.css">
     <link href="../css/Administrador/1_Principal_Administrador.css" rel="stylesheet" type="text/css" media="screen" />
     
   </head>
-<style>
- 
-</style>
 <body>
+  <center>
+<div class="lds-ripple">
+		<div></div>
+		<div></div>
+		</div>
+    </center>
 <center>   
         <div class="centro_contenido">
             <img src="../img/fondo_principal.png" width="200px">
@@ -48,11 +25,15 @@ if (!array_key_exists('role', $_SESSION) || !in_array($_SESSION['role'], $allowd
     </center>
 <div class="boton_cerrar">
 
-        <a href="../cerrar_sesion.php"><button class="cerrar_sesion"><img src="../img/cerrar-sesion.png" width="30px"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>sadsadsa</button></a>
+        <a href="../cerrar_sesion.php"><button class="cerrar_sesion"><img src="../img/cerrar-sesion.png" width="30px"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Cerrar sesión</button></a>
     </div>
     </form>
     <div class="barra_lateral">
             <div class="encabezado_lateral">
+            <div class="lds-ripple">
+		<div></div>
+		<div></div>
+		</div>
                 <h1>Serrcall Administrador</h1>
              </div>
               <div class="selecciones">

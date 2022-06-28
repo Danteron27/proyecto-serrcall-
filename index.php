@@ -6,35 +6,17 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
 <title>INICIO DE SESION</title>
 		
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
 <script src="js/jquery-1.12.4-jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<style type="text/css">
-	.login-form {
-		width: 340px;
-    	margin: 20px auto;
-	}
-    .login-form form {
-    	margin-bottom: 15px;
-        background: #f7f7f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-    .login-form h2 {
-        margin: 0 0 15px;
-    }
-    .form-control, .btn {
-        min-height: 38px;
-        border-radius: 2px;
-    }
-    .btn {        
-        font-size: 15px;
-        font-weight: bold;
-    }
-</style>
-</head>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/loader.css">
+
+	</head>
 	<body>
-<?php
+		<?php
 require_once 'DBconect.php';
 session_start();
 if(isset($_SESSION["admin_login"]))	//Condicion admin
@@ -165,52 +147,70 @@ if(isset($_REQUEST['btn_login']))
         <?php
 		}
 		?> 
-
-
-<div class="login-form">
-<center><h2>Inicio de sesión serrcall</h2></center>
-<form method="post" class="form-horizontal">
-  <div class="form-group">
-  <label class="col-sm-6 text-left">Correo electronico</label>
-  <div class="col-sm-12">
-  <input type="text" name="txt_email" class="form-control" placeholder="Ingrese su correo electronico"/>
-  </div>
-  </div>
-      
-  <div class="form-group">
-  <label class="col-sm-6 text-left">Contraseña</label>
-  <div class="col-sm-12">
-  <input type="password" name="txt_password" class="form-control" placeholder="Ingrese su contraseña" />
-  </div>
-  </div>
-      
-  <div class="form-group">
-      <label class="col-sm-6 text-left">Selección de rol</label>
-      <div class="col-sm-12">
-      <select class="form-control" name="txt_role">
-          <option value="" selected="selected"> - selecccionar rol - </option>
-          <option value="admin">Administrador</option>
-          <option value="usuarios">Asesor de ventas</option>
-      </select>
-      </div>
-  </div>
-  
-  <div class="form-group">
-  <div class="col-sm-12">
-  <input type="submit" name="btn_login" class="btn btn-success btn-block" value="Iniciar Sesion">
-  </div>
-  </div>
-  
- 
-      
-</form>
-</div>
-<!--Cierra div login-->
-		</div>
-		
-	</div>
+	<section class="ftco-section">
+		<div class="container">
 			
-	</div>
-										
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="text-wrap p-4 p-lg-8 text-center d-flex align-items-center order-md-last">
+							<div class="text w-100">
+								<h2>Bienvenido al sistema de gestión de inventarios de SERRCALL</h2>
+								<img src="images/snail.gif"width="50%" height="50%" alt="">
+							</div>
+			      </div>
+						<div class="login-wrap p-4 p-lg-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Iniciar sesión</h3>
+			      		</div>	
+			      	</div>
+						<form action="#" class="signin-form">
+			      		<div class="form-group mb-3">
+			      			<label class="label" for="name">Usuario</label>
+			      			<input type="text" name="txt_email" class="form-control" placeholder="Ingrese su correo electronico" required>
+			      		</div>
+						  <div class="form-group">
+							<label class="label" for="name">Contraseña</label>
+							<input type="password" name="txt_password" class="form-control" placeholder="Ingrese su contraseña" />
+							<span toggle="#password-field" ></span>
+						  </div>
+						  <div class="form-group">
+							<label class="col-sm-6 text-left">Selección de rol</label>
+							<div class="col-sm-12">
+							<select class="form-control" name="txt_role">
+								<option value="" selected="selected"> - selecccionar rol - </option>
+								<option value="admin">Administrador</option>
+								<option value="usuarios">Asesor de ventas</option>
+							</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+							<input type="submit" name="btn_login" class="btn btn-success btn-block" value="Iniciar Sesion">
+							</div>
+							</div>
+		            <div class="form-group d-md">
+		            	<div class="w-50 text-left">
+			            	<label class="checkbox-wrap checkbox-primary mb">Recordar mis datos
+									  <input type="checkbox" checked>
+									  	<span class="checkmark"></span>
+							</label>
+						</div>	
+		            </div>
+		          </form>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
 	</body>
 </html>
+
